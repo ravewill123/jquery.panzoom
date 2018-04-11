@@ -550,8 +550,8 @@
 				}
 				var spaceWLeft, spaceWRight, scaleDiff;
 				var container = this.container;
-				var width = this.elem.offsetWidth * scale;
-			        var height = this.elem.offsetHeight * scale;
+				var width = this.elem.offsetWidth * scale * window.devicePixelRatio;
+				var height = this.elem.offsetHeight * scale * window.devicePixelRatio;
 				var conWidth = container.width;
 				var conHeight = container.height;
 				var zoomAspectW = conWidth / width;
